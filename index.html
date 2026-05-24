@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EUR/USD Prediction</title>
+</head>
+
+<body>
+
+    <h1>Gold Price Prediction</h1>
+
+    <form action="/predict" method="post">
+
+        <input type="text" name="SPX" placeholder="SPX" required>
+        <input type="text" name="USO" placeholder="USO" required>
+        <input type="text" name="SLV" placeholder="SLV" required>
+        <input type="text" name="EURUSD" placeholder="EUR/USD" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
